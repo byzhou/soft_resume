@@ -2,6 +2,7 @@
 
 %\usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{url}
 %\pagestyle{fancy}
 %\lhead{\footnotesize \parbox{11cm}{Mahmoud Zangeneh} }
 
@@ -11,17 +12,15 @@
 \begin{document}
 \pagestyle{empty}
 \begin{center}
-\vspace{-0.2in}
 {\large\textbf{Boyou Zhou}}\\
 Department of Electrical and Computer Engineering, Boston University\\
-8 St Mary's St, PHO 340, Boston, MA 02215\\
+8 St Mary's St, Photonics Center, Room 340, Boston, MA 02215\\
 Email: bobzhou@bu.edu, Phone: 617-678-8480\\
 \rule[-0.1cm]{7.5in}{0.01cm}
 \end{center}
 %
 
 \textbf{Education}
-\vspace{-0.1in}
 \begin{table*}[h]
   %\newcommand{\z}{$^*$}
   %\centering
@@ -34,16 +33,20 @@ Email: bobzhou@bu.edu, Phone: 617-678-8480\\
   \label{tbl:1}
 \end{table*}
 
-\vspace{-0.1in}
-\noindent \textbf{Internship Experience,}
-\textbf{Analog Device Inc. San Jose, CA, June.2014-August.2014}
+\noindent \textbf{Internship Experience}
     \begin{itemize}
-        \item Modeling ADP1048 PFC chip's application power stage with
-        voltage-input-current-output feedback loop and chip's analog components,
-        using Cadence Verilog-ams and verilog testbench for close loop
-        simulation. Exploring the model with System Verilog to achieve
-        consistency between \textit{Analog Device Inc.} Adice5 analog simulation
+        \item \textbf{Design Engineer at Analog Device Inc. San Jose, CA, June.2014-August.2014}\\
+        Real Number Modeling ADP1048 PFC chip's application power stage with
+        voltage-input-current-output feedback loop and chip's analog components, using Cadence
+        Verilog-ams and verilog testbench for close loop simulation. Exploring the model with System
+        Verilog to achieve consistency between \textit{Analog Device Inc.} Adice5 analog simulation
         and \textit{Cadence Incisive} digital simualtion. 
+        \item \textbf{Design Engineer at Analog Device Inc. Wilmington, MA, June.2015-August.2015}\\
+        Research on exploring Real Number Modeling using System Verilog. Set up environment for
+        System Verilog Real Number Modeling, including Netlisting tool integration, netlisted code
+        post-processing and data type library customization for RNM.
+        \item \textbf{Job offered from \textit{Analog Device Inc.} as Design Engineer, July.2015}\\
+        Position of firmware designer.
     \end{itemize}
 
 \noindent \textbf{Research Experience, Oct.2013-May.2014, Sept.2014-Dec.2014}
@@ -63,14 +66,19 @@ Email: bobzhou@bu.edu, Phone: 617-678-8480\\
         \end{itemize}
 
 \noindent \textbf{Publication}
-\vspace{-0.15cm}
 \begin{itemize}
     \item \textbf{Detecting hardware Trojans using backside optical imaging of
-    embedded watermarks, \textit{2015 Design Automation Conference}} Engineering
-    a specific standard cell for photonic response Hardware Trojan Detection,
-    comparing process variation using Monte Carlo simulation results with the
-    timing and power analysis results from \textit{Cadence Encounter} ASIC
-    Synthesis tool
+    embedded watermarks, \textit{2015 Design Automation Conference}}, first author
+    
+    Engineering a specific standard cell for photonic response Hardware Trojan Detection, comparing
+    process variation using Monte Carlo simulation results with the timing and power analysis
+    results from \textit{Cadence Encounter} ASIC Synthesis tool.
+
+    \item \textbf{Rapid mapping of digital integrated circuit logic gates via multi-spectral backside
+    imaging, \textit{2015 Optical Express}}
+
+    Near-IR high resolution imaging and classifications for digital integrated circuits to detect
+    Hardware Trojans.
 \end{itemize}
 
 \noindent \textbf{Relevant Courses}
@@ -79,7 +87,7 @@ Email: bobzhou@bu.edu, Phone: 617-678-8480\\
                     Hardware Security, Linux Kernel Programing in Embedded System, RF/IC Design,
                     Advanced Digital Design with Verilog and FPGA, Computer
                     Architecture, Digital VLSI Design, RF Analog VLSI Design,
-                    Operating System.
+                    Operating System, Hardware Security.
 \item Undergraduate:
                     Digital Signal Processing, Communication System, Signals
                     and Systems, Computer Organization and 
@@ -87,26 +95,100 @@ Email: bobzhou@bu.edu, Phone: 617-678-8480\\
 \end{itemize}
 
 %CLASS PROJECTS AND UNDERGRADUATE PROJECTS
-
-\noindent \textbf{Class Projects}
+\noindent \textbf{Projects}
 \begin{itemize}
+    \item \textbf{Hardware Projects}
+    \begin{itemize}
+        \item \textbf{Digital:} 
+        \begin{itemize}
 
-\item 1GHz-FM Receiver PCB design -
-Designed a demodulator down-converting from 1-GHz to baseband in order to
-achieve FM demodulation.
+            \item \verb+FPGA design+
 
-\item RF/Analog VLSI design -
-Using cadence to design LNA, Gilbert Multiplier, Power Amplifier, Quadrature
-Oscillator and Phase Locked Loop at 5 GHz.
+            Designed an old fashioned game on Xilinx Spartan 6 with monitors and keyboard.  In particular,
+            My design part involves the object movements, part of game logic and game AI using Verilog.
 
-\item Digital VLSI design - 
-Compared 7T and 8T sub-threshold SRAM designs using Monte-Carlo Simulation.
 
-\item FPGA design - 
-Designed an old fashioned game on Xilinx Spartan 6 with monitors and keyboard.
-In particular, My design part involves the object movements, part of game logic
-and game AI using Verilog.
+            \item \verb+CPU design+
 
+            Design single CPU implemented on Spartan 6 FPGA that can execute 16 instructions and run
+            basic assembly programs.
+
+        \end{itemize}
+
+        \item \textbf{Analog:} 
+
+        \begin{itemize}
+
+            \item \verb+1GHz-FM Receiver PCB design+
+
+            Designed a demodulator down-converting from 1-GHz to baseband in order to achieve FM
+            demodulation.
+
+            \item \verb+RF/Analog VLSI design+ 
+
+            Using cadence to design LNA, Gilbert Multiplier, Power Amplifier, Quadrature Oscillator and
+            Phase Locked Loop at 5 GHz.
+
+            \item \verb+Digital VLSI design+
+
+            Compared 7T and 8T sub-threshold SRAM designs using Monte-Carlo Simulation.
+
+        \end{itemize}
+
+        \item \textbf{Mixed-Signal:}
+
+        \begin{itemize}
+            \item \verb+Metastability Driven True Random Number Generator+
+
+            Using Cadence Virtuoso and Incisive to design TRNG using metastability of CMOS,
+            configured by digital logic.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Firmware Projects}
+
+    \begin{itemize}
+
+        \item \verb+Embedded System Driver+
+
+        Debug Bluetooth Communication Programming in Gumstix.
+
+        \item \verb+Context Switch on Intel Machine and basic file system+
+
+        Program Low level pre-emption on Intel Machine and basic file system in Operating System
+        Course, running system on qemu.
+
+    \end{itemize}
+
+    \item \textbf{Software Projects}
+        
+    \begin{itemize} 
+
+        \item \verb+Zombie Bird+
+
+        Java game programming according to an online tutorial.
+
+        \item \verb+CLRS pseudocodoe Translation+
+
+        Translate all the algorithms in \textit{Introduction to Algorithms}, by Thomas H. Cormen,
+        Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, into C++ codes, posted on
+        \textit{Github}, working in progress.
+
+        \item \verb+Color compilers+
+
+        Color compiler output to the terminal, using Perl to intercept compiler process and re-post
+        report in color on terminal.
+
+        \item \verb+Mixed System Simulation Setup+
+        
+        Set up Ruby-driven Verilog, mixed system simulation, based cadence simulator and wave form
+        viewer.
+
+        \item Feel free to go to \url{http://github.com/byzhou}, and you will find more interesting
+        projects I list here.
+
+    \end{itemize} 
 %\item Undergraduate Verilog design - 
 %Designed and evaluated a multi-cycled 4004-processor having 20 instructions.
 
@@ -121,12 +203,12 @@ and game AI using Verilog.
 
 \noindent \textbf{Skills}
 \begin{itemize}
-\item Programming Languages:  Verilog, Verilog-ams, System Verilog, Perl,
-Python, C, C++, bash, hspice, Adice5, java
-\item Softwares:  Makefile, git, svn, ema, qemu, gdb, Matlab, Lingo, vim, latex.
-\item Circuit Design Tools:  incisive, simvision, Modelsim, Altium Designer,
-Cadence Encounter, HSPICE, Cadence Virtuoso, Virtuoso Layout Editor, LabView,
-Xilinx ISE, Quartus II, HFSS, Microwave Office. 
+\item Programming Languages:  Verilog/Verilog-ams/System Verilog, Perl, Python, C, C++, Ruby, Bash,
+Hspice, Adice5, Java, markdown
+\item Softwares: git/git-svn, vim, gcc/g++, qemu, gdb, emacs, Matlab, Makefile, Lingo, latex/latexmk, eclipse
+\item Circuit Design Tools:  incisive, simvision, Modelsim, Altium Designer, Cadence
+rc$\&$encounter, HSPICE, Cadence Virtuoso, Virtuoso Layout Editor, LabView, Xilinx ISE, Quartus II,
+HFSS, Microwave Office. 
 
 \end{itemize}
 %\newpage
@@ -150,7 +232,8 @@ Applications).
 
 \noindent \textbf{Teaching Experience}
 \begin{itemize}
-\item Graduate Teaching Fellow for Operating System at Boston University
+\item Graduate Teaching Fellow for Operating System (Raspberry pi working platform) at Boston
+University
 (Spring 2014).
 \item Graduate Teaching Fellow for Introduction to Software Engineering (C++) (Fall
 2013).
