@@ -14,6 +14,7 @@ endif
 default: all
 all:
 	$(compiler) Boyou_Zhou_CV.tex
+	pgrep mupdf | xargs -n 1 -I PID kill -SIGHUP PID 2>&1 > /dev/null
 
 view: $(target)
 
