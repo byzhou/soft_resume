@@ -33,37 +33,35 @@ Email: bobzhou@bu.edu, Phone: 617-678-8480, cv.boyouz.com\\
   \label{tbl:1}
 \end{table*}
 
-\noindent \textbf{Ongoing Projects}
+\noindent \textbf{Recent Projects}
 \begin{itemize}
 
 		\item \verb+Malware Detection using Hardware Performance Counters and Machine Learning+
 
-In the state-of-art malware detection, the research community has developed the
-malware detection using machine learning to training profiles of Hardware
-Performance Counters. In order to explore the feasibility of this method,  I
-built a cluster of experimental machines and connected them with Rabbitmq
-message system. I evaluated the results of Hardware Performance Counters using
-popular machine learning algorithms, such as K-Nearest Neighbors, Multi-layer
-Perceptions, and etc.
+I used automation in python to conduct interactions with more than 1000 software and malware, and measure 
+the Hardware Performance Counter (HPC) values attached to these binaries. I built a cluster of 
+machines to accelerate the measuring process using Rabbitmq. I performed data analysis on
+these HPC values using various machine learning algorithms, such as K Nearest Neighbors (KNN), Decision 
+Tree (DT), Multilayer Perceptrons (MLP), Naive Bayes, AdaBoost and Random Forest (RF). By applying 
+these machine learning algorithms, I evaluated the robustness of malware detection using these algorithms
+in cross-validations.  
+
 
 		\item \verb+Evercookie Tracker+
 
-In the web-based communications, web developers have leveraged cookies for
-storing identities, saving personal data and behavior tracking. However, some
-webs maliciously track user behaviors even though users have already removed
-the cookies. I have developed a evaluation backend to crawl newly visited
-website to detect the existence of evercookies. The newly detected evercookie
-websites are sent to the browser extension to notify the users.
+I built a browser extension to discover evercookies, the cookies that cannot be removed
+by users, from the newly-visited website. The extension I built can send the website information 
+to a remote server for further evaluation. If the evercookie is discovered through dynamic analysis, 
+the extension updates the blacklist of websites that have evercookies. I ran the backend with 
+man-in-the-middle proxy server running on a virtual machine. 
+
 
 		\item \verb+Hardware Detection using Optical Imaging Methods+
 
-We developed an optical based Hardware Trojan Detection. Hardware Trojans are the malicious
-hardware units inserted by intruders. The detection of Hardware Trojans are extremely hard -
-the reverse engineering of hardware units is costly and destructive. We use near-Infrared light 
-to image the backside of the Integrated Circuit Designs, since the backside is transparent. 
-However, due to the long wavelength of near-Infrared light, the imaged results requires additional
-data analysis and classification. Here, I have used the Support Vector Machine and K Nearest Neighbors to classify 
-various imaged results.
+I developed a Hardware Trojan (HT) Detection method using optical imaging. I automated the gate
+generation process and provided optical structures for simulation. I used the optical signatures
+from each gate to generate circuit responses over a large area. I also used KNN, DT, and Support Vector Machine (SVM) 
+to analyze the imaged results in order to classify different gates to detect HTs. 
 		
 \end{itemize}
 
@@ -114,15 +112,14 @@ behaviors.
 \noindent \textbf{Relevant Courses}
 \begin{itemize}
 \item 
-Linux Kernel Programing in Embedded System, Computer Architecture, Cyber
-Security, Operating System, Hardware Security, Data Structure.
+Cyber Security, Data Structure, Operating System, Hardware Security, Linux Kernel Programing in Embedded System and etc.
 \end{itemize}
 
 %CLASS PROJECTS AND UNDERGRADUATE PROJECTS
 
 \noindent \textbf{Skills}
 \begin{itemize}
-\item Softwares: Linux-utils, GDB, various IDEs, and basic network tools
+\item Softwares: Linux-utils, GDB, various IDEs, and network tools
 \item Programming Languages:  Python, C/C++, Bash and other various scripting languages,
 Android and Website Basics
 \end{itemize}
